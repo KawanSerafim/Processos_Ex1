@@ -123,7 +123,7 @@ public class RedesController {
 				BufferedReader buffer = new BufferedReader(leitor);
 				
 				String linha = "";
-				int cont = 1, cont2 = 1;;
+				int cont = 1;
 				
 				while (linha != null) {
 					System.out.println("Calculando...");
@@ -137,20 +137,23 @@ public class RedesController {
 							if (cont == 2) {
 								
 								String[] div2 = palavra.split("/");
+								cont = 1;
 								
 								for (String palavra2 : div2) {
 									
-									if (cont2 == 2) {
+									if (cont == 2) {
 										
-										System.out.println("\n" + palavra2);
+										System.out.println("\n A media deu: " + palavra2);
+										break;
 										
 									}
-									else if (cont2 < 2){
-										cont2++;
+									else if (cont < 2) {
+										cont++;
 									}
 								}
+								
 							}
-							else if (cont < 2) {
+							else if (cont < 2){
 								cont++;
 							}
 						}

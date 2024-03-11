@@ -7,8 +7,6 @@ public class Main {
 	public static void main (String [] args) {
 		RedesController redes = new RedesController();
 		
-		
-		
 		int opc = 0;
 		while (opc!=9) {
 			opc = Integer.parseInt(JOptionPane.showInputDialog("MENU\n\n" +
