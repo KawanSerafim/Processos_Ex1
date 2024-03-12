@@ -89,9 +89,11 @@ public class RedesController {
 				
 				String linha = "";
 				
+				System.out.println("\n MEDIA DE PING\n");
+				
 				while (linha != null) {
 					
-					System.out.println("\n MEDIA DE PING\n\n Calculando...");
+					System.out.println("Calculando...");
 					
 					if ((linha.contains("M")&&(linha.contains("dia")))) {
 						
@@ -124,6 +126,8 @@ public class RedesController {
 				
 				String linha = "";
 				int cont = 1;
+				
+				System.out.println("\n MEDIA DE PING\n");
 				
 				while (linha != null) {
 					System.out.println("Calculando...");
