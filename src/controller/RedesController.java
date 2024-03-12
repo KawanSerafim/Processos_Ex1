@@ -91,7 +91,7 @@ public class RedesController {
 				
 				while (linha != null) {
 					
-					System.out.println("Calculando...");
+					System.out.println("\n MEDIA DE PING\n\n Calculando...");
 					
 					if ((linha.contains("M")&&(linha.contains("dia")))) {
 						
