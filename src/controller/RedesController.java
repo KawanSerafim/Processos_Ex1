@@ -101,6 +101,10 @@ public class RedesController {
 						
 						for (String palavra : media) {
 							if (palavra.contains("dia")) {
+								
+								Process p2 = Runtime.getRuntime().exec("cls");
+								InputStream fluxo2 = p.getInputStream();
+								
 								System.out.println("\n" + palavra);
 							}
 						}
@@ -146,6 +150,9 @@ public class RedesController {
 								for (String palavra2 : div2) {
 									
 									if (cont == 2) {
+										
+										Process p2 = Runtime.getRuntime().exec("cls");
+										InputStream fluxo2 = p.getInputStream();
 										
 										System.out.println("\n A media deu: " + palavra2);
 										break;
